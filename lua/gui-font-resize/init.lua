@@ -15,14 +15,11 @@ M.options = {
 ------------------------------
 
 M.setup = function(user_opts)
+    local opts = M.options
     if user_opts ~= nil then
-        for k, v in pairs(user_opts) do
-            if M.options[k] ~= nil then
-                M.options[k] = v
-            end
-        end
+        opts = vim.tbl_deep_extend("force", opts, user_opts)
     end
-    setup_commands(M.options)
+    setup_commands(opts)
 end
 
 ------------------------------
