@@ -6,6 +6,10 @@ local setup_commands = require("gui-font-resize.utils.commands")
 M.options = {
     default_size = 11,
     change_by = 1,
+    bounds = {
+        maximum = 24,
+        minimum = 8,
+    },
 }
 
 ------------------------------
