@@ -41,6 +41,15 @@ Neovim `0.7` or higher
 
 ## Installation
 
+With Lazy
+
+```lua
+{
+    "ktunprasert/gui-font-resize.nvim",
+    config = true,
+}
+```
+
 With Packer
 
 ```lua
